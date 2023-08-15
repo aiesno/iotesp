@@ -15,7 +15,7 @@
 char auth[] = BLYNK_AUTH_TOKEN;
 
 char ssid[] = "Noh";
-char pass[] = "12345678";
+char pass[] = "87654321";
 #include <Adafruit_NeoPixel.h>
  Adafruit_NeoPixel pixels = Adafruit_NeoPixel(5, 4, NEO_GRB + NEO_KHZ800);
 
