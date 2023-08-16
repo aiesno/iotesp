@@ -159,6 +159,9 @@ int pinValue = param.asInt();
     pixels.setPixelColor(4, 0x000000);
     pixels.show();
     pixels.show();
+    tambah coding sini
+    tambah coding 2
+    tambah coding 3
 
   }
 }
