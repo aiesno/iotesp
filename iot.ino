@@ -2,9 +2,6 @@
 #define BLYNK_DEVICE_NAME           "IotESP32"
 #define BLYNK_AUTH_TOKEN            "2KLiaOI-L0uIbjeS0wmDIgUSZP96AJcj"
 
-#include <WiFi.h>
-#include <WiFiClient.h>
-#include <BlynkSimpleEsp32.h>
 char auth[] = BLYNK_AUTH_TOKEN;
 
 char ssid[] = "cuba";
@@ -13,11 +10,8 @@ char pass[] = "cubabarncahbaru";
 void setup() {
   Serial.begin(9600);
   pinMode(13,OUTPUT);
-  servo_23.attach(23);
   Timer1.setInterval(1000, Timer1_TimerEvent);
 }
 
 void loop() {
-  Blynk.run();
-  Timer1.run();
 }
