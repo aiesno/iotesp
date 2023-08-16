@@ -194,6 +194,9 @@ BlynkTimer Timer1;
 void Timer1_TimerEvent()
 {
   Blynk.virtualWrite(V4, ultrasonic(12,27));
+  //update analog35 read by taufik
+  int Analog35 = analogRead(35);
+  
 }
 
 
@@ -206,6 +209,9 @@ void setup() {
   pinMode(18,OUTPUT);
  pinMode(19,OUTPUT);
  pinMode(15,OUTPUT);
+ //update by taufik rezza
+ pinMode(35,INPUT);
+ //------------------------
   pixels.begin();
 
   servo_23.attach(23);
